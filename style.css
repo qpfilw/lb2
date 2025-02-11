@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fff 40%, #dfe9f3 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 400px;
+  max-width: 90%;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px 25px;
+  margin: 20px;
+}
+
+h1 {
+  margin: 10px 0 20px;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+}
+
+.input-row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-row input[type="text"] {
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 2px solid #eeeeee;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-row input[type="text"]:focus {
+  border-color: #717171;
+}
+
+.input-row button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.input-row button:hover {
+  background: #1669c1;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  background: #f1f3f4;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.filters button:hover {
+  background: #e0e0e0;
+}
+
+.filters button.active {
+  background: #1a73e8;
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: #fafafa;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  transition: box-shadow 0.2s;
+  border: 1px solid #e6e6e6;
+}
+
+li:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+li.completed {
+  background: #e6ffe6;
+  border: 1px solid #d7fbd7;
+}
+
+.task-text {
+  flex: 1;
+  margin-right: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+li.completed .task-text {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task-actions {
+  display: flex;
+  align-items: center;
+}
+
+.task-actions button {
+  margin-left: 5px;
+  padding: 6px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: opacity 0.2s;
+}
+
+.task-actions button.complete {
+  background: #4caf50;
+  color: #fff;
+}
+
+.task-actions button.complete:hover {
+  opacity: 0.8;
+}
+
+.task-actions button.delete {
+  background: #dc3545;
+  color: #fff;
+}
+
+.task-actions button.delete:hover {
+  opacity: 0.8;
+}
